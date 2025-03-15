@@ -4,6 +4,7 @@
   --blue-color: #466bf3;
   --black-color: #232631;
   --icon-color: #848484;
+  --no-color: #9c9c9c;
 }
 
 * {
@@ -11,4 +12,81 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 30px;
+}
+
+/* Stylingg */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo h4 {
+  color: var(--blue-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.list-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+
+.list-nav .active {
+  color: var(--blue-color);
+}
+
+.list-nav li {
+  color: var(--no-color);
+}
+
+.list-nav li a {
+  text-decoration: none;
+}
+
+.btn-login {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+.hero {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-cta h1 {
+  font-size: 60px;
+}
+
+.text-cta p {
+  color: var(--no-color);
+  font-size: 16px;
+}
+
+.hero-image img {
+  border-radius: 30px;
 }
