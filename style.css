@@ -61,6 +61,7 @@ nav {
 
 .list-nav li a {
   text-decoration: none;
+  color: var(--no-color);
 }
 
 .btn-login {
@@ -69,6 +70,12 @@ nav {
   border: none;
   color: var(--blue-color);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--blue-color);
+  color: white;
 }
 
 .hero {
@@ -89,4 +96,14 @@ nav {
 
 .hero-image img {
   border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .list-nav {
+    gap: 15px;
+  }
 }
