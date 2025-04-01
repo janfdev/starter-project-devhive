@@ -2,6 +2,7 @@
 
 :root {
   --blue-color: #466bf3;
+  --blue-second-color: #eef2fe;
   --black-color: #232631;
   --icon-color: #848484;
   --no-color: #9c9c9c;
@@ -66,12 +67,14 @@ nav {
 }
 
 .btn-login {
-  padding: 12px;
   border-radius: 10px;
   border: none;
+  padding: 10px 20px;
+  font-weight: 500;
   color: var(--blue-color);
   cursor: pointer;
   transition: all 0.3s ease;
+  background-color: var(--blue-second-color);
 }
 
 .btn-login:hover {
@@ -80,19 +83,23 @@ nav {
 }
 
 .hero-section {
+  margin-top: 30px;
   background-color: var(--secondary-color);
   border-radius: 30px;
+  padding: 20px;
 }
 
 .wrapper-hero {
+  width: 100%;
   margin-top: 15px;
   display: flex;
+  height: 500px;
   align-items: center;
   justify-content: space-between;
 }
 
 .text-cta {
-  padding-left: 40px;
+  padding-left: 15px;
 }
 
 .text-cta h1 {
@@ -104,9 +111,13 @@ nav {
   font-size: 16px;
 }
 
-.hero-image img {
+.wrapper-hero img {
   border-radius: 30px;
   width: 550px;
+  right: 0;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
