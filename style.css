@@ -84,14 +84,14 @@ nav {
 
 .hero-section {
   margin-top: 30px;
-  background-color: var(--secondary-color);
   border-radius: 30px;
+  background-color: var(--secondary-color);
   padding: 20px;
+  z-index: -1;
 }
 
 .wrapper-hero {
-  width: 100%;
-  margin-top: 15px;
+  position: relative;
   display: flex;
   height: 500px;
   align-items: center;
@@ -112,12 +112,24 @@ nav {
 }
 
 .wrapper-hero img {
+  position: absolute;
   border-radius: 30px;
-  width: 550px;
   right: 0;
   top: 0;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
+}
+
+.flight-booking {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.booking-tabs {
+  background: blue;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
