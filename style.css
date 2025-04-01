@@ -5,6 +5,7 @@
   --black-color: #232631;
   --icon-color: #848484;
   --no-color: #9c9c9c;
+  --secondary-color: #fafafa;
 }
 
 * {
@@ -78,15 +79,24 @@ nav {
   color: white;
 }
 
-.hero {
+.hero-section {
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+}
+
+.wrapper-hero {
   margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.text-cta {
+  padding-left: 40px;
+}
+
 .text-cta h1 {
-  font-size: 60px;
+  font-size: 52px;
 }
 
 .text-cta p {
@@ -96,6 +106,7 @@ nav {
 
 .hero-image img {
   border-radius: 30px;
+  width: 550px;
 }
 
 @media screen and (max-width: 768px) {
