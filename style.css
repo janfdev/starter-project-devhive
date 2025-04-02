@@ -182,6 +182,22 @@ nav {
   color: var(--icon-color);
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #3258e8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 10px 30px;
+}
+
+.search-bar span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
