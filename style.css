@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
+  --primary-color: #3258e8;
+  --secondary-color: #fafafa;
   --blue-color: #466bf3;
   --blue-second-color: #eef2fe;
   --black-color: #232631;
   --icon-color: #848484;
   --no-color: #9c9c9c;
-  --secondary-color: #fafafa;
+  --white-second-color: #eeeeee;
 }
 
 * {
@@ -127,8 +129,27 @@ nav {
   z-index: 2;
 }
 
+.button-group {
+  display: flex;
+}
+
+.button-group button:first-child {
+  background-color: var(--primary-color);
+  color: white;
+  border-top-left-radius: 8px;
+}
+
+.button-group button {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .booking-tabs {
-  background: blue;
+  background: white;
   padding: 20px;
 }
 
